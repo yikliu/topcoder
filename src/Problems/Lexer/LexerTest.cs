@@ -1,11 +1,11 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 
 namespace TopCoder.Problems.Lexer
 {
-    [TestClass]
+	[TestFixture ()]
     public class LexerTest
     {
-        [TestMethod]
+		[Test ()]
         public void TestTokenize()
         {
             string[] tokens = new[] {"AbCd", "dEfG", "GhIj"};
