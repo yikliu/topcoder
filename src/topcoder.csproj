@@ -38,14 +38,18 @@
     <Compile Include="Problems\Lexer\LexerTest.cs" />
     <Compile Include="Problems\SRM-Movestones\MovestoneTest.cs" />
     <Compile Include="Problems\SRM-Movestones\MoveStones.cs" />
+    <Compile Include="Problems\TimeConverter\TimeConverter.cs" />
+    <Compile Include="Problems\TimeConverter\TimeConverterTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Problems\Lexer\Problem.txt" />
     <None Include="Problems\SRM-Movestones\Problem.txt" />
+    <None Include="Problems\TimeConverter\Problem.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Problems\SRM-Movestones\" />
+    <Folder Include="Problems\TimeConverter\" />
   </ItemGroup>
 </Project>
