@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace TopCoder.Problems.Lexer
+namespace Topcoder
 {
 	[TestFixture ()]
     public class LexerTest
