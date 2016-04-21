@@ -1,1 +1,5 @@
-﻿<Properties StartupItem="topcoder/topcoder.csproj" />
+﻿<Properties>
+  <DisabledProjects>
+    <String>topcoder/topcoder.csproj</String>
+  </DisabledProjects>
+</Properties>

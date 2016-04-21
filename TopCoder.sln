@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "topcoder", "topcoder\topcoder.csproj", "{1C4EBBDA-0335-491E-A071-7469FBF4555A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "topcoder", "src\topcoder.csproj", "{1C4EBBDA-0335-491E-A071-7469FBF4555A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
