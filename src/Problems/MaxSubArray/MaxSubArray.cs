@@ -70,7 +70,7 @@ namespace Topcoder.Problems.MaxSubArray
 
             //conqueur 
             int a1 = 0;
-            int maxA1 = 0;
+            int maxA1 = Int32.MinValue;
             int i = mid;
             int last_i = mid;
             for (; i >= start; i--)
@@ -84,7 +84,7 @@ namespace Topcoder.Problems.MaxSubArray
             }
 
             int a2 = 0;
-            int maxA2 = 0;
+            int maxA2 = Int32.MinValue;
             int j = mid + 1;
             int last_j = j;
             
@@ -95,8 +95,7 @@ namespace Topcoder.Problems.MaxSubArray
                 {
                     maxA2 = a2;
                     last_j = j;
-                }
-                
+                }               
             }
 
             int A = maxA1 + maxA2;

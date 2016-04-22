@@ -22,6 +22,12 @@ namespace Topcoder.Problems.MaxSubArray
 
             int sum3 = msa.FindByDC(6, new[] { -1, -2, -3, -4, -5, -6 });
             Assert.AreEqual(-1, sum3);
+
+            int sum4 = msa.FindByDC(1, new[] { -10 });
+            Assert.AreEqual(-10, sum4);
+
+            int sum5 = msa.FindByDC(5, new[] { 1, -1, -1, -1, -1, 5 });
+            Assert.AreEqual(5, sum5);
         }
     }
 }
