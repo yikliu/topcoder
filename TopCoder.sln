@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "topcoder", "src\topcoder.csproj", "{1C4EBBDA-0335-491E-A071-7469FBF4555A}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topcoder", "src\Topcoder.csproj", "{1C4EBBDA-0335-491E-A071-7469FBF4555A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +15,8 @@ Global
 		{1C4EBBDA-0335-491E-A071-7469FBF4555A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C4EBBDA-0335-491E-A071-7469FBF4555A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C4EBBDA-0335-491E-A071-7469FBF4555A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
