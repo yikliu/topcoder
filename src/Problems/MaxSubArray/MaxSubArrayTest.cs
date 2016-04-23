@@ -13,7 +13,7 @@ namespace Topcoder
         private MaxSubArray msa = new MaxSubArray();
 
         [TestCase(new int[] { 2, -1, 2, 3, 4, -5 }, 0, 5, ExpectedResult = 10, TestName="MaxSubArrayTest1")]
-        [TestCase(new int[] { 1 }, 0, 0, ExpectedResult = 1, TestName = "MaxSubArrayTest1")]
+        [TestCase(new int[] { 1 }, 0, 0, ExpectedResult = 1, TestName = "MaxSubArrayTest2")]
         [TestCase(new int[] { -1, -2, -3, -4, -5 }, 0, 4, ExpectedResult = -1, TestName = "MaxSubArrayTest3")]
         [TestCase(new int[] { 1, -1, -1, -1, -1, 5 }, 0, 5, ExpectedResult = 5, TestName = "MaxSubArrayTest4")]
         [TestCase(new int[] { -10 }, 0, 0, ExpectedResult = -10, TestName = "MaxSubArrayTest5")]
@@ -32,6 +32,17 @@ namespace Topcoder
         public int MaxSubArrayNonContiguousTest(int[] array)
         {
             return msa.FindNonContiguousSum(array);
+        }
+
+        [TestCase(new int[] { 2, -1, 2, 3, 4, -5 }, ExpectedResult = 10, TestName = "MaxSubArrayDPTest1")]
+        [TestCase(new int[] { 1 }, ExpectedResult = 1, TestName = "MaxSubArrayDPTest2")]
+        [TestCase(new int[] { -1, -2, -3, -4, -5 }, ExpectedResult = -1, TestName = "MaxSubArrayDPTest3")]
+        [TestCase(new int[] { 1, -1, -1, -1, -1, 5 }, ExpectedResult = 5, TestName = "MaxSubArrayDPTest4")]
+        [TestCase(new int[] { -10 }, ExpectedResult = -10, TestName = "MaxSubArrayDPTest5")]
+        [TestCase(new int[] { -100, -1 }, ExpectedResult = -1, TestName = "MaxSubArrayDPTest6")]
+        public int MaxSubArrayContiguousDPTest(int[] array)
+        {
+            return msa.FindByDP(array);
         }
     }
 }

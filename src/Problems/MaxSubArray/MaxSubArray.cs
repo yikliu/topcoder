@@ -86,6 +86,7 @@ namespace Topcoder
 
 		}
 
+        //Solve by divide and conquer
         public int FindByDivideConquer(int[] array, int start, int end)
         {
             if (start == end)
@@ -98,9 +99,36 @@ namespace Topcoder
             int s2 = FindByDivideConquer(array, mid + 1, end);
 			int cross = FindMaxCrossMid (array, mid, start, end);
 			string message = string.Format ("{0}:{1}:{2}, {3}, {4}, {5}", start, mid, end, s1, s2, cross);
-			Console.WriteLine (message);
 			return max(s1, s2, cross );
 
+        }
+
+        //Solve by DP
+        public int FindByDP(int[] array)
+        {
+            int sz = array.Length;
+            int sum = 0;
+            int max_sub = Int32.MinValue;
+            int min_sum_prior = 0;
+
+            int sub_sum = 0;
+            for (int i = 0; i < sz; i++)
+            {
+                sum += array[i];
+
+                sub_sum = sum - min_sum_prior;
+
+                if (sub_sum > max_sub)
+                {
+                    max_sub = sub_sum;
+                }
+
+                if (sum < min_sum_prior)
+                {
+                    min_sum_prior = sum;
+                }
+            }
+            return max_sub;
         }
 
         public int FindNonContiguousSum(int[] array)
