@@ -1,5 +1,5 @@
 ﻿/**
- * Given an array A={a1,a2,…,aN}A={a1,a2,…,aN} of NN elements, find the maximum possible sum of a
+ * Given an array A={a1,a2,…,aN}A={a1,a2,…,aN} of NN elements, findByDivideConquer the maximum possible sum of a
 
 Contiguous subarray
 Non-contiguous (not necessarily contiguous) subarray.
@@ -48,10 +48,7 @@ namespace Topcoder
 {
     class MaxSubArray
     {
-        //Divide and Conqure
-        // NlogN time
-        
-		private int max (int i, int j){
+        private int max (int i, int j){
 			return i > j ? i : j;
 		}
 
@@ -89,7 +86,7 @@ namespace Topcoder
 
 		}
 
-        public int find(int[] array, int start, int end)
+        public int FindByDivideConquer(int[] array, int start, int end)
         {
             if (start == end)
             {
@@ -97,13 +94,37 @@ namespace Topcoder
             }
 
             int mid = (start + end)/2;
-            int s1 = find(array, start, mid);
-            int s2 = find(array, mid + 1, end);
+            int s1 = FindByDivideConquer(array, start, mid);
+            int s2 = FindByDivideConquer(array, mid + 1, end);
 			int cross = FindMaxCrossMid (array, mid, start, end);
 			string message = string.Format ("{0}:{1}:{2}, {3}, {4}, {5}", start, mid, end, s1, s2, cross);
 			Console.WriteLine (message);
 			return max(s1, s2, cross );
 
+        }
+
+        public int FindNonContiguousSum(int[] array)
+        {
+            int max = Int32.MinValue;
+            bool allNegative = true;
+            int sum = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] > 0)
+                {
+                    allNegative = false;
+                    sum += array[i];
+                }
+                else
+                {
+                    if (array[i] > max)
+                    {
+                        max = array[i];
+                    }
+                }
+            }
+
+            return allNegative ? max : sum;
         }
     }
 }

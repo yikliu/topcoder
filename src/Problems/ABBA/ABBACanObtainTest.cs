@@ -6,17 +6,16 @@ namespace Topcoder
 	[TestFixture()]
 	public class ABBACanObtainTest
 	{
-		[Test()]
-		public void CanObtainTest ()
+
+        private ABBA ab = new ABBA();
+        
+        [Test()]
+        [TestCase("B", "ABBA", ExpectedResult="Possible")]
+        [TestCase("BBBBABABBBBBBA", "BBBBABABBABBBBBBABABBBBBBBBABAABBBAA", ExpectedResult="Possible")]
+        [TestCase("A", "BB", ExpectedResult= "Impossible")]
+        public string CanObtainTest (string from, string to)
 		{
-			var possible = "Possible";
-			var impossible = "Impossible";
-			ABBA ab = new ABBA ();
-			Assert.AreEqual(possible, ab.canObtain("B", "ABBA"));
-
-			Assert.AreEqual(possible, ab.canObtain("BBBBABABBBBBBA","BBBBABABBABBBBBBABABBBBBBBBABAABBBAA"));
-
-			Assert.AreEqual (impossible, ab.canObtain ("A", "BB"));
+			return ab.canObtain(from, to);           
 		}
 	}
 }
