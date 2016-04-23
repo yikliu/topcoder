@@ -44,87 +44,65 @@ For the max sum of a not-necessarily-contiguous group of elements, simply add al
 
 using System;
 
-namespace Topcoder.Problems.MaxSubArray
+namespace Topcoder
 {
     class MaxSubArray
     {
         //Divide and Conqure
         // NlogN time
-        public int FindByDC(int sz, int[] array)
-        {
-            var res = find(array, 0, sz - 1);
-            Console.WriteLine(res[0] + " " + res[1]);
-            return res[2];
-        }
+        
+		private int max (int i, int j){
+			return i > j ? i : j;
+		}
 
-        private int[] find(int[] array, int start, int end)
+		private int max (int i, int j, int m){
+			return max (i, max (j, m));
+		}
+
+		private int FindMaxCrossMid(int[] array, int mid, int start, int end){
+			int a1 = 0;
+			int maxA1 = Int32.MinValue;
+			int i = mid;
+			for (; i >= start; i--)
+			{
+				a1 += array[i];
+				if (a1 > maxA1)
+				{
+					maxA1 = a1;
+				}                
+			}
+
+			int a2 = 0;
+			int maxA2 = Int32.MinValue;
+
+			int j = mid + 1;
+			for (; j <= end; j++)
+			{
+				a2 += array[j];
+				if (a2 > maxA2)
+				{
+					maxA2 = a2;
+				}               
+			}
+
+			return maxA1 + maxA2;
+
+		}
+
+        public int find(int[] array, int start, int end)
         {
             if (start == end)
             {
-                return new int[]{start, end, array[start]};
+                return array[start];
             }
 
             int mid = (start + end)/2;
-            int[] res1 = find(array, start, mid);
-            int[] res2 = find(array, mid + 1, end);
-
-            //conqueur 
-            int a1 = 0;
-            int maxA1 = Int32.MinValue;
-            int i = mid;
-            int last_i = mid;
-            for (; i >= start; i--)
-            {
-                a1 += array[i];
-                if (a1 >= maxA1)
-                {
-                    maxA1 = a1;
-                    last_i = i;
-                }                
-            }
-
-            int a2 = 0;
-            int maxA2 = Int32.MinValue;
-            int j = mid + 1;
-            int last_j = j;
-            
-            for (; j <= end; j++)
-            {
-                a2 += array[j];
-                if (a2 > maxA2)
-                {
-                    maxA2 = a2;
-                    last_j = j;
-                }               
-            }
-
-            int A = maxA1 + maxA2;
-
-            int s1 = res1[2];
-            int s2 = res2[2];
-
-            if (s1 > s2)
-            {
-                if (s1 > A)
-                {
-                    return res1;
-                }
-                else
-                {
-                    return new[] {last_i, last_j, A};
-                }
-            }
-            else
-            {
-                if (s2 > A)
-                {
-                    return res2;
-                }
-                else
-                {
-                    return new[] {last_i, last_j, A};
-                }
-            }
+            int s1 = find(array, start, mid);
+            int s2 = find(array, mid + 1, end);
+			int cross = FindMaxCrossMid (array, mid, start, end);
+			string message = string.Format ("{0}:{1}:{2}, {3}, {4}, {5}", start, mid, end, s1, s2, cross);
+			Console.WriteLine (message);
+			return max(s1, s2, cross );
 
         }
     }
