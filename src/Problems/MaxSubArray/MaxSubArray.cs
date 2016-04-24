@@ -98,7 +98,7 @@ namespace Topcoder
             int s1 = FindByDivideConquer(array, start, mid);
             int s2 = FindByDivideConquer(array, mid + 1, end);
 			int cross = FindMaxCrossMid (array, mid, start, end);
-			string message = string.Format ("{0}:{1}:{2}, {3}, {4}, {5}", start, mid, end, s1, s2, cross);
+			//string message = string.Format ("{0}:{1}:{2}, {3}, {4}, {5}", start, mid, end, s1, s2, cross);
 			return max(s1, s2, cross );
 
         }

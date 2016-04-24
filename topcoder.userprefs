@@ -3,29 +3,20 @@
     <String>topcoder/topcoder.csproj</String>
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Problems/ABBA/ABBA.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Problems/MaxSubArray/MaxSubArray.cs">
     <Files>
-      <File FileName="src/Problems/Lexer/Lexer.cs" Line="1" Column="1" />
-      <File FileName="src/Problems/Lexer/LexerTest.cs" Line="1" Column="1" />
-      <File FileName="src/Problems/SRM-Movestones/Problem.txt" Line="1" Column="1" />
-      <File FileName="src/Problems/SRM-Movestones/MoveStones.cs" Line="17" Column="17" />
-      <File FileName="src/Problems/SRM-Movestones/MovestoneTest.cs" Line="3" Column="19" />
-      <File FileName="src/Problems/TimeConverter/TimeConverter.cs" Line="27" Column="63" />
-      <File FileName="src/Problems/TimeConverter/TimeConverterTest.cs" Line="10" Column="3" />
-      <File FileName="src/Problems/TimeConverter/Problem.txt" Line="18" Column="9" />
-      <File FileName="src/Problems/ABBA/Problem.txt" Line="48" Column="38" />
-      <File FileName="src/Problems/ABBA/ABBA.cs" Line="39" Column="2" />
-      <File FileName="src/Problems/ABBA/ABBACanObtainTest.cs" Line="23" Column="1" />
+      <File FileName="src/Problems/MaxSubArray/MaxSubArrayTest.cs" Line="18" Column="38" />
+      <File FileName="src/Problems/MaxSubArray/MaxSubArray.cs" Line="98" Column="4" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.NUnit.TestPad">
         <State name="__root__">
-          <Node name="topcoder" expanded="True">
-            <Node name="topcoder" expanded="True" selected="True">
+          <Node name="TopCoder" expanded="True">
+            <Node name="Topcoder" expanded="True">
               <Node name="Topcoder" expanded="True">
-                <Node name="ABBACanObtainTest" expanded="True" />
-                <Node name="MovestoneTest" expanded="True" />
-                <Node name="TimeConverterTest" expanded="True" />
+                <Node name="MaxSubArrayTest" expanded="True">
+                  <Node name="TestGetByDC" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
