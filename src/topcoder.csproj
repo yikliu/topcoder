@@ -68,6 +68,8 @@
     <Compile Include="Problems\CoinChange\CountWaysOfCoinChangeTest.cs" />
     <Compile Include="Problems\Candies\Candies.cs" />
     <Compile Include="Problems\Candies\CandiesTest.cs" />
+    <Compile Include="Problems\StockMax\StockMax.cs" />
+    <Compile Include="Problems\StockMax\StockMaxTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -85,5 +87,6 @@
   <ItemGroup>
     <Folder Include="Problems\CoinChange\" />
     <Folder Include="Problems\Candies\" />
+    <Folder Include="Problems\StockMax\" />
   </ItemGroup>
 </Project>
