@@ -55,19 +55,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Problems\Lexer\Lexer.cs" />
-    <Compile Include="Problems\Lexer\LexerTest.cs" />
     <Compile Include="Problems\MaxSubArray\MaxSubArray.cs" />
-    <Compile Include="Problems\MaxSubArray\MaxSubArrayTest.cs" />
-    <Compile Include="Problems\SRM-Movestones\MovestoneTest.cs" />
     <Compile Include="Problems\SRM-Movestones\MoveStones.cs" />
     <Compile Include="Problems\TimeConverter\TimeConverter.cs" />
-    <Compile Include="Problems\TimeConverter\TimeConverterTest.cs" />
     <Compile Include="Problems\ABBA\ABBA.cs" />
-    <Compile Include="Problems\ABBA\ABBACanObtainTest.cs" />
     <Compile Include="Problems\CoinChange\CoinChange.cs" />
-    <Compile Include="Problems\CoinChange\CountWaysOfCoinChangeTest.cs" />
     <Compile Include="Problems\Candies\Candies.cs" />
-    <Compile Include="Problems\Candies\CandiesTest.cs" />
     <Compile Include="Problems\StockMax\StockMax.cs" />
     <Compile Include="Problems\StockMax\StockMaxTest.cs" />
   </ItemGroup>
@@ -76,10 +69,6 @@
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Problems\Lexer\Problem.txt" />
-    <None Include="Problems\SRM-Movestones\Problem.txt" />
-    <None Include="Problems\TimeConverter\Problem.txt" />
-    <None Include="Problems\ABBA\Problem.txt" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />

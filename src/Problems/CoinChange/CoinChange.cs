@@ -56,11 +56,16 @@ Example 1: For N=4N=4 and C={1,2,3}C={1,2,3} there are four solutions: {1,1,1,1}
 Example 2: For N=10N=10 and C={2,5,3,6}C={2,5,3,6} there are five solutions: {2,2,2,2,2},{2,2,3,3},{2,2,6},{2,3,5},{5,5}{2,2,2,2,2},{2,2,3,3},{2,2,6},{2,3,5},{5,5}.
  **/
 using System;
+using NUnit.Framework;
 
 namespace Topcoder
 {
 	public class CoinChange
 	{
+		[TestCase(new int[]{1, 2, 3}, 4, ExpectedResult=4, TestName="CoinChangeTest1")]
+		[TestCase(new int[]{2, 5, 3, 6}, 10, ExpectedResult=5, TestName="CoinChangeTest2")]
+		[TestCase(new int[]{41, 34, 46, 9, 37, 32, 42, 21, 7, 13, 1, 24, 3, 43, 2, 23, 8, 45, 19, 30, 29, 18, 35, 11}, 250, 
+			ExpectedResult=15685693751, TestName="CoinChangeTest3")]
 		public long CountWaysOfChange (int[] coins, long sum)
 		{
 			int sz = coins.Length;
