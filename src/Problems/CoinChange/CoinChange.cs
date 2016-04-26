@@ -69,6 +69,7 @@ namespace Topcoder
 			for (long j = 0; j < sz; j++) {
 				count [0, j] = 1;
 			}
+
 			long count1 = 0;
 			long count2 = 0;
 			for (long i = 1; i <= sum; i++) {
@@ -77,7 +78,6 @@ namespace Topcoder
 					count2 = i - coins [j] < 0 ? 0 : count [i - coins [j], j]; 
 
 					count [i, j] = count1 + count2;
-
 				}
 			}
 

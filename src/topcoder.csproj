@@ -66,6 +66,8 @@
     <Compile Include="Problems\ABBA\ABBACanObtainTest.cs" />
     <Compile Include="Problems\CoinChange\CoinChange.cs" />
     <Compile Include="Problems\CoinChange\CountWaysOfCoinChangeTest.cs" />
+    <Compile Include="Problems\Candies\Candies.cs" />
+    <Compile Include="Problems\Candies\CandiesTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -82,5 +84,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Problems\CoinChange\" />
+    <Folder Include="Problems\Candies\" />
   </ItemGroup>
 </Project>

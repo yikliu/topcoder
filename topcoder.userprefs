@@ -3,26 +3,11 @@
     <String>topcoder/topcoder.csproj</String>
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Problems/MaxSubArray/MaxSubArray.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Problems/CoinChange/CoinChange.cs">
     <Files>
-      <File FileName="src/Problems/MaxSubArray/MaxSubArrayTest.cs" Line="18" Column="38" />
-      <File FileName="src/Problems/MaxSubArray/MaxSubArray.cs" Line="98" Column="4" />
+      <File FileName="src/Problems/CoinChange/CountWaysOfCoinChangeTest.cs" Line="1" Column="1" />
+      <File FileName="src/Problems/CoinChange/CoinChange.cs" Line="71" Column="5" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State name="__root__">
-          <Node name="TopCoder" expanded="True">
-            <Node name="Topcoder" expanded="True">
-              <Node name="Topcoder" expanded="True">
-                <Node name="MaxSubArrayTest" expanded="True">
-                  <Node name="TestGetByDC" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
