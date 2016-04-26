@@ -54,6 +54,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Problems\GridWalk\GridWalk.cs" />
     <Compile Include="Problems\Lexer\Lexer.cs" />
     <Compile Include="Problems\MaxSubArray\MaxSubArray.cs" />
     <Compile Include="Problems\SRM-Movestones\MoveStones.cs" />
@@ -62,7 +63,6 @@
     <Compile Include="Problems\CoinChange\CoinChange.cs" />
     <Compile Include="Problems\Candies\Candies.cs" />
     <Compile Include="Problems\StockMax\StockMax.cs" />
-    <Compile Include="Problems\StockMax\StockMaxTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -73,9 +73,5 @@
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Problems\CoinChange\" />
-    <Folder Include="Problems\Candies\" />
-    <Folder Include="Problems\StockMax\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>
