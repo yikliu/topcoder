@@ -54,7 +54,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Problems\GridWalk\GridWalk.cs" />
     <Compile Include="Problems\Lexer\Lexer.cs" />
     <Compile Include="Problems\MaxSubArray\MaxSubArray.cs" />
     <Compile Include="Problems\SRM-Movestones\MoveStones.cs" />
@@ -63,6 +62,9 @@
     <Compile Include="Problems\CoinChange\CoinChange.cs" />
     <Compile Include="Problems\Candies\Candies.cs" />
     <Compile Include="Problems\StockMax\StockMax.cs" />
+    <Compile Include="Problems\LongestCommonSequence\LCS.cs" />
+    <Compile Include="Problems\BalancedParanthesis\BalancedParanthesis.cs" />
+    <Compile Include="Problems\MaxSubMatrix\MaxSubMatrix.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -74,4 +76,10 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Problems\LongestCommonSequence\" />
+    <Folder Include="Problems\BalancedParanthesis\" />
+    <Folder Include="Problems\GridWalk\" />
+    <Folder Include="Problems\MaxSubMatrix\" />
+  </ItemGroup>
 </Project>
